@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a;
+    color: white;
+}
+
+.weather-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1b263b;
+    border-radius: 20px;
+    text-align: center;
+}
+button{
+    background-color: #415a77;
+    color: white;
+border-style: hidden;
+}
+
+.current-weather {
+    margin-bottom: 40px;
+}
+
+.temp-info h2 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
