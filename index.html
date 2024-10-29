@@ -11,27 +11,29 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="weather-container">
+   
+    <div class="weather-container mt-5 ">
        
 
             
-    <div><input id="inputvalue" class="form-control   bg-body-tertiary rounded" type="text" placeholder="enter the city" aria-label="default input example"></div>
+    <div><input id="inputvalue" class="form-control   bg-body-tertiary rounded"  type="text" placeholder="enter the city" aria-label="default input example"></div>
     <button type="button" class=" mt-3 w-15 " onclick="search()">get whether</button>
     <BR></BR>
     <div class="current-weather" id="result">
             <h1 id="cityName"></h1>
             <p id="dateTime"></p>
             <div class="temp-info">
-                <h2 id="temperature"></h2>
+                
+                <h2 id="temperature" class="mt-3"></h2>
                 
                 <p id="weatherCondition"></p>
             </div>
             <div class="details">
-                <p>Feels like: <span id="feelsLike"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
-                <p>Wind: <span id="windSpeed"></span></p>
-                <p>country: <span id="country"></span></p>
-                <p>pressure: <span id="pressure"></span></p>
+                <p> <span id="feelsLike"></span></p>
+                <p>  <span id="humidity"></span></p>
+                <p>  <span id="windSpeed"></span></p>
+                <p> <span id="country"></span></p>
+                <p> <span id="pressure"></span></p>
 
             </div>
         </div>
@@ -86,6 +88,8 @@
 
                  result.innerHTML=` <div class="current-weather" id="result">
             <h1 id="cityName">${inputvalue.value},${country}</h1>
+             <img src="https://th.bing.com/th/id/R.74e019b12031688411874078f8903a6b?rik=RSUpoEIMfsdPug&riu=http%3a%2f%2fclipart-library.com%2fimg1%2f970969.png&ehk=df8BqVjmR0%2fpJRwLVnr9UGB3sbSMYy5xLz%2fLYbsYDE4%3d&risl=&pid=ImgRaw&r=0" alt="" width="60px" height="60px">
+            
             <p id="dateTime"></p>
             <div class="temp-info">
                 <h2 id="temperature">${Math.round(temp-273.15)}℃</h2>
@@ -93,11 +97,11 @@
                
             </div>
             <div class="details">
-                <p>Feels like: <span id="feelsLike">${feels}℃</span></p>
-                <p>Humidity: <span id="humidity">${humidity}%</span></p>
-                <p>Wind: <span id="windSpeed">${wind}km/hr</span></p>
+                <p> Feels like: <span id="feelsLike">${feels}℃ </span> </p>
+                <p>Humidity: <span id="humidity">${humidity}%</span><img src="https://cdn4.iconfinder.com/data/icons/weather-114/45/humidity-meter-high-512.png" alt="" width="20px" height="20px"></p>
+                <p> Wind: <span id="windSpeed">${wind}km/hr</span> <img src="https://icon-library.com/images/wind-icon-png/wind-icon-png-2.jpg" alt="" width="20px" height="20px"></p>
                
-                <p>pressure: <span id="pressure">${pressure}</span></p>
+                <p>pressure: <span id="pressure">${pressure}</span><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/air-pressure-6543775-5478947.png" alt="" width="20px" height="20px"></p>
             </div>
         </div>`
                 
